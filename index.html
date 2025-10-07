@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab 3 • Weather + Recipes (Simple)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Lab 3 – Weather + Recipes (OpenWeatherMap + TheMealDB)</h1>
+  </header>
+
+  <section id="weatherSection">
+    <h2>Weather (Troy, NY)</h2>
+    <div class="row">
+      <div>
+        <button id="loadWeatherBtn">Load Weather</button>
+        <div class="small">Units: °F (imperial)</div>
+        <p id="weatherStatus" class="small"></p>
+        <div id="weatherOut"></div>
+
+        <div class="small" style="margin-top:.5rem">
+          Pretend Weather:
+          <select id="pretendWeather">
+            <option value="">(real)</option>
+            <option>Rain</option>
+            <option>Drizzle</option>
+            <option>Thunderstorm</option>
+            <option>Snow</option>
+            <option>Clouds</option>
+            <option>Clear</option>
+          </select>
+          <button id="applyPretendBtn">Apply</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ideasSection">
+    <h2>Recipe Ideas (TheMealDB)</h2>
+    <div class="row">
+      <div>
+        <button id="loadIdeasBtn">Get Ideas</button>
+        <p class="small" id="ideasSeed"></p>
+        <div id="ideasOut"></div>
+      </div>
+      <div class="small">
+        Weather → cozy keywords (soup/ramen/stew/etc.), then broad category fallback, then random.
+      </div>
+    </div>
+  </section>
+
+  <footer class="small" style="margin-top:1rem">
+    Data: OpenWeatherMap · TheMealDB — cite your sources in README.md.
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
